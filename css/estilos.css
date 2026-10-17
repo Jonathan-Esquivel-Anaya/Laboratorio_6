@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+/* Colores principales */
+:root {
+    --forest: #233f35;
+    --forest2: #365c49;
+    --cream: #f8f5ec;
+    --sand: #e7dcc8;
+    --terracotta: #b36c49;
+    --ink: #29392f;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+}
+
+/* Barra de navegación */
+.navbar {
+    background: var(--forest);
+    padding: 17px 0;
+    box-shadow: 0 5px 18px #172f2622;
+}
+
+.navbar-brand {
+    font-size: 1.04rem;
+    letter-spacing: .01em;
+}
+
+.brand-mark {
+    font-size: 1.5rem;
+    color: #d9b58b;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.navbar .nav-link {
+    color: #e1e8df !important;
+    font-size: .88rem;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #f0c898 !important;
+}
+
+/* Portada principal */
+.hero {
+    padding: 155px 0 95px;
+    background: radial-gradient(
+        circle at 72% 30%,
+        #e5e8d8 0,
+        transparent 39%
+    ), #f3eee2;
+}
+
+.eyebrow,
+.section-kicker {
+    color: var(--terracotta);
+    font-weight: 700;
+    font-size: .72rem;
+    letter-spacing: .18em;
+}
+
+.hero h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 6vw, 5.7rem);
+    line-height: 1.06;
+    letter-spacing: -.035em;
+    margin: 22px 0;
+}
+
+.hero h1 em {
+    color: var(--forest2);
+    font-weight: 600;
+}
+
+.lead {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #576358;
+    max-width: 520px;
+}
+
+/* Botón principal */
+.btn-explore {
+    background: var(--forest);
+    color: #fff;
+    border-radius: 4px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.btn-explore:hover {
+    background: var(--forest2);
+    color: #fff;
+}
+
+.btn-explore span {
+    margin-left: 18px;
+}
+
+.hero-footnote {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 48px;
+    color: #7b8375;
+    font-size: .67rem;
+    letter-spacing: .14em;
+}
+
+.line {
+    height: 1px;
+    width: 38px;
+    background: var(--terracotta);
+}
+
+/* Fotografía de la portada */
+.hero-photo {
+    position: relative;
+    margin: 0;
+    padding: 12px 12px 0;
+    background: #fff;
+    box-shadow: 0 20px 60px #34473822;
+    transform: rotate(1deg);
+}
+
+.hero-photo img {
+    display: block;
+    width: 100%;
+    height: 445px;
+    object-fit: cover;
+    background: #e0d9c9;
+}
+
+.hero-photo figcaption {
+    padding: 15px 8px;
+    font-size: .65rem;
+    letter-spacing: .12em;
+    color: #657066;
+    font-weight: 700;
+}
+
+.dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #b77951;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Introducción al museo */
+.intro {
+    padding: 90px 0 100px;
+}
+
+.intro h2,
+.photo-note h2 {
+    font-size: clamp(2.4rem, 4vw, 3.7rem);
+    line-height: 1.18;
+    margin-top: 16px;
+}
+
+.intro h2 span {
+    color: var(--terracotta);
+}
+
+.intro p,
+.photo-note p {
+    color: #5b685e;
+    line-height: 1.85;
+}
+
+/* Tarjetas de las exhibiciones */
+.topic {
+    min-height: 215px;
+    background: #eae4d6;
+    border-top: 3px solid #bd8b63;
+    padding: 25px;
+    position: relative;
+}
+
+.topic > span:first-child {
+    font-size: .65rem;
+    letter-spacing: .16em;
+    color: #94664d;
+    font-weight: 700;
+}
+
+.topic h3 {
+    font-size: 1.45rem;
+    margin-top: 17px;
+}
+
+.topic p {
+    font-size: .87rem;
+}
+
+.topic-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    font-size: 1.4rem;
+    color: var(--forest2);
+}
+
+/* Sección de fotografías */
+.photo-note {
+    padding: 75px 0;
+    background: #e3e9de;
+}
+
+.photo-note img {
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+    border: 9px solid #f7f5ed;
+    box-shadow: 0 12px 30px #243e3026;
+}
+
+.photo-note .col-lg-7 {
+    padding-left: 5%;
+}
+
+/* Pie de página */
+footer {
+    padding: 25px 0;
+    background: var(--forest);
+    color: #cbd8cf;
+    font-size: .78rem;
+}
+
+footer a {
+    color: #f0c898;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Ajustes para tabletas */
+@media (max-width: 991px) {
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .hero {
+        padding: 120px 0 65px;
+    }
+
+    .hero-photo img {
+        height: 330px;
+    }
+
+    .photo-note .col-lg-7 {
+        padding-left: 12px;
+    }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 575px) {
+    .hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .hero-photo img {
+        height: 260px;
+    }
+
+    .hero-footnote {
+        font-size: .56rem;
+    }
+
+    .intro {
+        padding: 65px 0;
+    }
+
+    .photo-note {
+        padding: 50px 0;
+    }
+}

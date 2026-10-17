@@ -1,0 +1,103 @@
+/* Estilos exclusivos de las tres exhibiciones */
+.exhibit-hero {
+    padding: 155px 0 85px;
+    background: radial-gradient(circle at 85% 20%, #dce3d5, transparent 45%), #f3eee2;
+}
+.exhibit-label {
+    color: var(--terracotta, #b36c49);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+}
+.exhibit-hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(3.3rem, 6vw, 5.8rem);
+    line-height: 1.1;
+    margin: 24px 0;
+    max-width: 850px;
+}
+.exhibit-hero h1 em {
+    color: var(--forest2, #365c49);
+}
+.exhibit-subtitle {
+    font-size: 1.13rem;
+    line-height: 1.85;
+    max-width: 720px;
+    color: #576358;
+}
+.exhibit-section {
+    padding: 85px 0;
+}
+.exhibit-section h2,
+.next-exhibit h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin: 15px 0 20px;
+}
+.exhibit-intro,
+.exhibit-section p {
+    line-height: 1.85;
+    color: #58665d;
+}
+.fossil-card {
+    border: 1px solid #ded8c9;
+    border-radius: 5px;
+    background: #fffdf7;
+    overflow: hidden;
+    box-shadow: 0 12px 28px #233f3510;
+}
+.fossil-card img {
+    height: 235px;
+    object-fit: cover;
+    background: #e6e0d3;
+}
+.fossil-card .card-body {
+    padding: 24px;
+}
+.fossil-card h3 {
+    font-size: 1.55rem;
+    margin-bottom: 14px;
+}
+.fossil-card p {
+    font-size: .94rem;
+    margin-bottom: 0;
+}
+.image-credit {
+    font-size: .77rem;
+}
+.section-muted {
+    background: #e3e9de;
+}
+.accordion-item {
+    border-color: #d2d8cc;
+    background: #f8f5ec;
+}
+.accordion-button {
+    background: #f8f5ec;
+    color: #233f35;
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    background: #d3ddcf;
+    color: #233f35;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 .15rem #7a998b55;
+}
+.next-exhibit {
+    padding: 60px 0;
+    background: #365c49;
+    color: white;
+}
+.next-exhibit h2 {
+    margin-bottom: 0;
+}
+.next-exhibit .section-kicker {
+    color: #e7bd95;
+}
+@media (max-width: 575px) {
+    .exhibit-hero { padding: 125px 0 65px; }
+    .exhibit-section { padding: 60px 0; }
+    .fossil-card img { height: 210px; }
+}
